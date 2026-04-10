@@ -1,39 +1,74 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kayra Nightwear</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="shopping_cart.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Kayra Nightwear!</h1>
+        <h1>Welcome to Kayra Nightwear</h1>
+        <nav>
+            <ul>
+                <li><a href="#alpine">Alpine Collection</a></li>
+                <li><a href="#rayon">Rayon Collection</a></li>
+                <li><a href="#cord">Cord Collection</a></li>
+                <li><a href="#cart">Shopping Cart</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section id="collections">
-            <h2>Our Collections</h2>
-            <article class="collection alpine">
-                <h3>Alpine Collection</h3>
-                <p>Description of the Alpine collection.</p>
-                <button onclick="addToCart('alpine')">Buy Now</button>
-            </article>
-            <article class="collection rayon">
-                <h3>Rayon Collection</h3>
-                <p>Description of the Rayon collection.</p>
-                <button onclick="addToCart('rayon')">Buy Now</button>
-            </article>
-            <article class="collection cord">
-                <h3>Cord Collection</h3>
-                <p>Description of the Cord collection.</p>
-                <button onclick="addToCart('cord')">Buy Now</button>
-            </article>
+        <section id="alpine">
+            <h2>Alpine Collection</h2>
+            <div class="product">
+                <h3>Alpine Pajama Set</h3>
+                <p>Soft and cozy pajama set for winter nights.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Alpine Robe</h3>
+                <p>Warm robe to keep you snug.</p>
+                <button>Add to Cart</button>
+            </div>
         </section>
-        <section id="payment">
-            <h2>Payment Options</h2>
-            <p>We accept UPI and Cash on Delivery (COD).</p>
+        <section id="rayon">
+            <h2>Rayon Collection</h2>
+            <div class="product">
+                <h3>Rayon Nightgown</h3>
+                <p>Light and breezy nightgown for summer.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Rayon Shorts</h3>
+                <p>Comfortable shorts for lounging.</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+        <section id="cord">
+            <h2>Cord Collection</h2>
+            <div class="product">
+                <h3>Cord Sleep Shirt</h3>
+                <p>Relaxing sleep shirt made of corduroy.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Cord Pants</h3>
+                <p>Stylish cord pants for comfort.</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Shopping Cart</h2>
+            <div id="cart-items">
+                <p>No items in your cart.</p>
+            </div>
+            <button id="checkout">Proceed to Checkout</button>
         </section>
     </main>
     <footer>
         <p>&copy; 2026 Kayra Nightwear. All rights reserved.</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
